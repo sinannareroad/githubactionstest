@@ -51,6 +51,7 @@ jobs:
   deploy:
     if: ${{ endsWith(github.ref, '/main') }}
     runs-on: ubuntu-latest
+    environment: production
     needs: 
       - test-1
       - test-2
